@@ -1,0 +1,9 @@
+<div class = 'col-md-3'
+  <div class = 'thumbnail'>
+    <%= image_tag 'cover.jpg', class: 'img-responsive'%>
+  </div>
+  <div class = 'caption'>
+    <p><strong><%= link_to item.name, item_path(item) %></strong></p>
+              <p>$<%= item.price/100 %></p>
+  </div>
+</div>

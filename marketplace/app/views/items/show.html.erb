@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<div class="row">
+  <div class="col-md-6"><%= image_tag "cover.jpeg", class: 'img-responsive'%>
+  	
+  </div>
+  <div class="col-md-6">
+
+
+
+<p>
+  <strong>Name:</strong>
+  <%= @item.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @item.description %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  $<%= @item.price/100 %>
+</p>
+
+<p>
+  <strong>Availability:</strong>
+  <%= @item.availability %>
+</p>
+</div>
+
+<%= link_to 'Edit', edit_item_path(@item) %> |
+<%= link_to 'Back', items_path %>
